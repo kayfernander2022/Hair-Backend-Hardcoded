@@ -1,9 +1,10 @@
+//NO database connection here. We are just creating a backend that is returning json dummy data.
 /////////////////////////
 // DEPENDENCIES
 /////////////////////////
-const express = require('express')
-const app = express()
-require('dotenv').config()
+const express = require('express')//import express
+const app = express()//create app object.
+require('dotenv').config()//get .env variables
 const {PORT = 3030, DATABASE_URL}=process.env
 
 
@@ -25,10 +26,12 @@ const bundles = [
 
 // home route that says "hello world" to test server is working
 app.get("/", (req, res) => {
-  //res.json let's us send a response as JSON data
+  //res.json let's us send a response as JSON data and not just text with res.send.
   res.json({
       response: "Hello World"
   })
+  //OR
+  //res.send('Hello World')
 });
 
 // Hair Index Route (Send All hair bundles)
@@ -74,4 +77,4 @@ res.json(bundles)
 /////////////////////////
 // Listener
 /////////////////////////
-app.listen(3030, () => console.log("Listening on port 3030"))
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
