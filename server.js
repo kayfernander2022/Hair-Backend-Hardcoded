@@ -7,12 +7,16 @@ const app = express()//create app object.
 require('dotenv').config()//get .env variables
 const {PORT = 3030, DATABASE_URL}=process.env
 
+/////////////////////////
+// MIDDLEWARE IMPORT
+/////////////////////////
+const cors= require("cors")
 
 /////////////////////////
-// MIDDLEWARE
+// USE MIDDLEWARE
 /////////////////////////
-
 app.use(express.json())
+app.use(cors())
 
 const bundles = [
     {name: "Indian Curly", description: "Soft and Luscious"},
