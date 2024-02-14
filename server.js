@@ -15,7 +15,7 @@ const cors= require("cors")
 /////////////////////////
 // USE MIDDLEWARE
 /////////////////////////
-app.use(express.json())
+app.use(express.json())//needed when sending a body in the post and update routes. This middleware converts a JSON string from the api to a JSON object for data manipulation by the application. 
 app.use(cors())
 
 
