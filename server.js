@@ -23,11 +23,11 @@ app.use(cors())
 // MODEL
 /////////////////////////
 const bundles = [
-    {name: "Indian Curly", description: "Soft and luscious. No shedding, no tangling"},
-    {name: "Indian Straight", description: "Our Indian straight hair has predominately straight cuticles. This hair is ideal for the woman who prefers silky smooth tresses at all times."},
-    {name: "Indian Wavy", description: "It has a natural loose body wave which allows great versatility & body when styling."},
-    {name: "Brazilian Curly", description: "Our Brazilian curly pattern is great for achieving a voluminous look." },
-    {name: "Brazilian Wavy", description: "Soft and sleek. Durable with no tangling"}
+    {id:0, name: "Indian Curly", description: "Soft and luscious. No shedding, no tangling"},
+    {id:1, name: "Indian Straight", description: "Our Indian straight hair has predominately straight cuticles. This hair is ideal for the woman who prefers silky smooth tresses at all times."},
+    {id:2, name: "Indian Wavy", description: "It has a natural loose body wave which allows great versatility & body when styling."},
+    {id:3, name: "Brazilian Curly", description: "Our Brazilian curly pattern is great for achieving a voluminous look." },
+    {id:4, name: "Brazilian Wavy", description: "Soft and sleek. Durable with no tangling"}
 ]
 
 /////////////////////////
