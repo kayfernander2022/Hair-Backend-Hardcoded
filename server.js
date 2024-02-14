@@ -18,12 +18,18 @@ const cors= require("cors")
 app.use(express.json())
 app.use(cors())
 
+
+/////////////////////////
+// MODEL
+/////////////////////////
 const bundles = [
-    {name: "Indian Curly", description: "Soft and Luscious"},
-    {name: "Indian Straight", descriotion: "Soft and Luscious"},
-    {name: "Brazilian Curly", descriotion: "Soft and Luscious"},
-    {name: "Brazilian Wavy", descriotion: "Soft and Luscious"}
+    {name: "Indian Curly", description: "Soft and luscious. No shedding, no tangling"},
+    {name: "Indian Straight", description: "Our Indian straight hair has predominately straight cuticles. This hair is ideal for the woman who prefers silky smooth tresses at all times."},
+    {name: "Indian Wavy", description: "It has a natural loose body wave which allows great versatility & body when styling."},
+    {name: "Brazilian Curly", description: "Our Brazilian curly pattern is great for achieving a voluminous look." },
+    {name: "Brazilian Wavy", description: "Soft and sleek. Durable with no tangling"}
 ]
+
 /////////////////////////
 // Routes //CRUD
 /////////////////////////
